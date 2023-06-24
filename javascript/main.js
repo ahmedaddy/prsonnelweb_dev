@@ -28,3 +28,13 @@
 // // video.onclick(function () {
 // //   video.pause();
 // // });
+let navbtn, links;
+navbtn = document.querySelector(".nav-btn-i i");
+links = document.querySelector("header .container .header-nav");
+
+navbtn.addEventListener("click", () => {
+  links.style.opacity = "1";
+});
+links.addEventListener("click", () => {
+  links.style.opacity = "0";
+});

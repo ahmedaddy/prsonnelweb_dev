@@ -28,13 +28,15 @@
 // // video.onclick(function () {
 // //   video.pause();
 // // });
-let navbtn, links;
+let navbtn, links, l;
 navbtn = document.querySelector(".nav-btn-i i");
 links = document.querySelector("header .container .header-nav");
 
 navbtn.addEventListener("click", () => {
   links.style.opacity = "1";
+  links.style.display = "block";
 });
 links.addEventListener("click", () => {
   links.style.opacity = "0";
+  links.style.display = "none";
 });

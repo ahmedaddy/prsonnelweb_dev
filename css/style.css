@@ -80,9 +80,15 @@ header .container .header-nav {
   align-items: center;
   justify-content: center;
 }
+header .container .header-nav .btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 @media (max-width: 767px) {
   header .container .header-nav {
     opacity: 0;
+    display: none;
   }
   header .container nav ul {
     display: flex;
@@ -880,4 +886,12 @@ footer .box input[type="email"] {
 }
 footer .box input[type="email"]:focus {
   outline: none;
+}
+@media (max-width: 767px) {
+  footer {
+    padding: 20px;
+  }
+  footer .box {
+    width: 300px;
+  }
 }
